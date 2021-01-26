@@ -1,0 +1,29 @@
+A--
+divide by highest power of 2, check if remaining integer is >1. If so, answer is yes else no.
+
+B--
+loop over possible multiple of 2020 and check if remainder is divisible by 2021.
+
+C--
+for each i (boy_i,girl_i) find the number of j (boy_j,girl_j) that can be formed pair with it. 
+The maximum possibility is (n-1) - (number_of_pair_having(boy_i)-1) - (number_of_pair_having(girl_i)-1) + (number_of_pairs(boy_i,girl_i)-1)
+sum up for all i
+
+D--
+seprate the values having 1 and 2 in seprate vectors, sort them in descending order. append 0 at the front of it.
+now iterate over all (1):- binary search how many of 2's you require to make ans>=m. take the minimum value over all(1).
+
+E--
+consider frequecy of each number in top k. It does not change in all sequences.
+say it occurs m times in top k and n in total. the number of ways = nck(n,m). multiply all such values.
+
+F--
+The array a-->b can written as a^b-->0 array or 0-->a^b. xor can be reversed.
+consider the operations on col and row seprately. The first row can tell us the operations applied on columns.
+Till no operation is applied on row yet. all rows are identical. now if a operation is applied on row or not.
+in first case it is inverted of row[0] in second case it is same. if not any of above then ans is "NO". all satisfied ? ans is "YES".
+
+G--
+sorting wont change ans ? sort it.
+for a i the number which can divide it occurs to its left. problem reduces to the finding of maximum increasing subsquecnce. 
+The ans is maximum over all i. so just iterate over divisors of a number (use seive for better complexity) get its maximum value and update for i accordingly.
