@@ -1,0 +1,11 @@
+GUESS THE INTEGER:
+find maximum left value and minimum right value and implement accordingly.
+
+TUSHAR KA B'DAY:
+use simple prefix counter to get the number of subarrays having sum even ending at index i and sum them up over.
+
+SHUBHAM AND ACM-ICPC:
+The idea is first element gets paired with 2..n any of them.
+create a set of all the divisors of 2..n and answer is one of them. Then check the maximum of them which can form the ans.
+To check for x create a map of remainder and use the property that 0 can be paired with 0 only and d with x-d. return true of cnt == sz(vt)/2
+
