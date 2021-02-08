@@ -1,0 +1,32 @@
+-------------------------------------------
+possible ans is azazazaz...
+replace the place where s[i]==ans[i] with 'b' or 'y' accordingly
+--------------------------------------------
+
+
+The thing we gotta understand is in victory two things happen --- our hero has positive health. 
+------------ our hero dies in last attack. ------------- in both the cases we have the positive health of hero before last attack.
+just check if there is some poosibility of that.
+
+-------------------------------------------
+
+
+Answer is simple and lies in binary search. consider left and right endpoints as l and r. The situation at points is \ and /. in begining.
+check for middle --- only three possibilties if middle is not ans --- / / or \ \ or /\. since \/ -- mid is ans.
+we look for position like \/ while \ and / is maintained at ends, -- this is why binary search works, then shift accroding to results of middle.
+
+
+----------------------------------------
+ 
+ classic question for max. 
+ maintain 2 stacks. say top elements be x and y. and upcoming element be z. if z is same as both, put in any.
+ z matches with one , put in another. z matches with none --- say nxt(x) denote next occurence of x and same with y. put in stack where nxt(x)<nxt(y).
+ the example describes optimality:- 3,4    --- 5,3,3,4
+ possible== 3,5,3,4
+            4,3,4
+         else 3,3,4
+              4,5,3
+              
+              
+ for another part --- s Bélády's algorithm or farthest-in-the-future cache/page replacement policy is followed, follow --- nxt(x) > nxt(y) for ans.
+ 
