@@ -1,0 +1,2 @@
+when there are strings given in sorted order, the ordering of alphabets such that it can form a valid order exits only when string's lengths are sorted when their prefixes match.
+Ex: aa,a. No matter what ordering of alphabet is, the given cannot form valid ordering.
